@@ -1,0 +1,123 @@
+html{
+
+  font-family: 'Open Sans', sans-serif;
+}
+
+body{
+
+  padding: 0;
+  margin: 0;
+}
+
+.navBar{
+
+  position: relative;
+  background-color: #E5F0FF;
+  height: 10vh;
+  width: 100%;
+  overflow: hidden;
+  align-items: center;
+  margin: 0;
+
+}
+
+.websiteTitle{
+position: absolute;
+display: inline-block;
+  left: 30px;
+  bottom: 40%;
+  font-size: 25px;
+  font-weight: 100px;
+}
+
+.ul-list{
+ position: absolute;
+ display: flex;
+ justify-content: space-around;
+ right: 10px;
+list-style: none;
+bottom: 20%;
+width: 20%;
+}
+
+.li-list{
+
+  display: inline-block;
+
+}
+
+
+.li-list:nth-child(2):before{
+
+}
+
+.li-list:nth-child(2):after{
+
+}
+
+.ul-articles{
+  list-style: none;
+}
+
+.li-articles{
+  list-style: none;
+}
+
+.pageTitle{
+  margin-left: 30px;
+}
+
+.contentTitle{
+
+}
+
+
+
+.footer{
+  position: absolute;
+  bottom: 0;
+  height: 20px;
+  width: 100%;
+  background-color: blue;
+  color: white;
+  text-align: center;
+  padding: 0.5rem;
+}
+
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
+.pContent{
+  margin-left: 30px;
+}
+
+.label{
+  display: block;
+  font-weight: 30px;
+  margin: 30px 30px 30px 30px;
+}
+.postTitle{
+  display: block;
+  width: 80%;
+  height: 5vh;
+  border-radius: 5px;
+  margin: 30px 30px 30px 30px;
+  outline: none;
+  border: none;
+  box-shadow: 0 0 10px black;
+  padding: 0 10px 0 10px;
+}
+
+.postBody{
+  display: block;
+  width: 80%;
+  height: 40%;
+  border-radius: 10px;
+  margin: 30px 30px 30px 30px;
+ outline: none;
+ border: none;
+ box-shadow: 0 0 10px black;
+ padding: 10px;
+}
