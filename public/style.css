@@ -121,3 +121,14 @@ a{
  box-shadow: 0 0 10px black;
  padding: 10px;
 }
+
+.submitButton{
+  width: 5%;
+  height:5vh;
+  border-radius: 5px;
+  background-color: #E5F0FF;
+  color: black;
+  padding: 2px;
+  margin: 30px 30px 30px 30px;
+  border: none;
+}

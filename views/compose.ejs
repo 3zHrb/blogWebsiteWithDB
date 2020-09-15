@@ -1,11 +1,12 @@
 <%- include('partials/header'); -%>
 
 
-<form>
+<form action="/posted" method="post">
 <label class="label">Post Title</label>
-<input class="postTitle" type="text"></input>
+<input name="postTitle" class="postTitle" type="text"></input>
 <label class="label">Post Body</label>
-<textarea class="postBody" name="name" rows="8" cols="80"></textarea>
+<textarea name="bodyTitle" class="postBody" name="name" rows="8" cols="80"></textarea>
+<button class="submitButton" type="submit">Submit</button>
 </form>
 
 <%- include('partials/footer'); -%>

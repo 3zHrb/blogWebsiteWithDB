@@ -5,8 +5,15 @@
 <section>
 <ul class="lu-articles">
 <li class="li-articles">
+<% if(dataBack == null){ %>
 <h3 class="contentTitle">first</h3>
 <p class="content"> content </p>
+<%}else{%>
+  <% dataBack.forEach(function(data){ %>
+    <h3 class="contentTitle"><%= data.title %></h3>
+    <p class="content"><%= data.body %></p>
+  <%});%>
+  <% }; %>
 </li>
 <ul>
 
