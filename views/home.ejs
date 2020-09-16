@@ -10,8 +10,10 @@
 <p class="content"> content </p>
 <%}else{%>
   <% dataBack.forEach(function(data){ %>
+    <div class="postsContainer">
     <h3 class="contentTitle"><%= data.title %></h3>
-    <p class="content"><%= data.body %></p>
+    <p class="content"><%= data.body.length < 45? data.body: data.body.substr(0,45) + "... " %> <a class="showUrl" href="/post/<%= data._id %>"> <%= data.body.length < 45? "": "show more" %> </a></p>
+    </div>
   <%});%>
   <% }; %>
 </li>

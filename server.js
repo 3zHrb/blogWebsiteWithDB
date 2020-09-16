@@ -64,10 +64,24 @@ var row = new Collection({
 row.save(function(error, passed){
   if(error){
     console.log("error occured while saving data to Database");
+    res.redirect("/");
     return;
   };
 if(passed){
   res.redirect("/");
 };
 });
+});
+
+app.get("/post/:route", function(req,res){
+
+var route = req.params.route;
+
+Collection.findOne({_id: route}, function(error, data){
+  if(error){return;}
+  if(data){
+    res.render("post", {title: data.title, body: data.body});
+  };
+})
+
 });
